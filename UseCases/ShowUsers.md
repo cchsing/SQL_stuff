@@ -12,3 +12,5 @@ SELECT user,host FROM mysql.user;
 ## Display Unique Usernames
 
 SELECT DISTINCT user FROM mysql.user;
+
+test link [go to select](./SelectFromTables.md)
