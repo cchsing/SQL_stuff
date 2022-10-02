@@ -11,7 +11,7 @@ SHOW SCHEMAS;
 
 ## show databases with specific pattern or naming rules
 
-SHOW DATABASES LIKE <pattern>; <br>
+SHOW DATABASES LIKE \<pattern\>; <br>
 SHOW DATABASES LIKE 'open%';
 
 - The percent sign (%) means zero, one, or multiple characters.
