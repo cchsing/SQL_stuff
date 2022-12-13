@@ -20,3 +20,7 @@ SHOW DATABASES LIKE 'open%';
 
 mysql -u <user> -p -e 'show databases;' <br>
 mysqlshow -u <user> -p
+
+# Creating Database
+
+1. CREATE DATABASE django_db_1;
