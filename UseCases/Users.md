@@ -29,3 +29,23 @@ test link [go to select](./SelectFromTables.md)
 7. REVOKE type_of_permission ON database_name.table_name FROM 'username'@'host';
 8. SHOW GRANTS FOR 'username'@'host';
 9. DROP USER 'username'@'localhost';
+
+## Create application user table
+
+```
+CREATE TABLE `django_db_1`.`user` (
+  `username` VARCHAR(16) NOT NULL,
+  `email` VARCHAR(255) NULL,
+  `password` VARCHAR(32) NOT NULL,
+  `create_time` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP);
+
+CREATE TABLE users
+( user_id int PRIMARY KEY,
+  username varchar(25) NOT NULL,
+  password varchar(30) NOT NULL
+  );
+```
+
+DROP USER 'root'@'localhost';
+CREATE USER 'root'@'%' IDENTIFIED WITH mysql_native_password BY '123456';
+GRANT ALL PRIVILEGES ON \*.\* TO 'root'@'%' WITH GRANT OPTION;

@@ -26,3 +26,5 @@ CREATE TABLE TestTable AS
 SELECT customername, contactname
 FROM customers;
 ```
+
+DROP TABLE table_name;

@@ -6,7 +6,10 @@ mysql -u <user> -p
 
 ## list all the databases that the <user> has permission to
 
-SHOW DATABASES; <br>
+SHOW DATABASES;
+
+USE {DATABASE};
+
 SHOW SCHEMAS;
 
 ## show databases with specific pattern or naming rules
